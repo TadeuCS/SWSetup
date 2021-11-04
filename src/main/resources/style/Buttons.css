@@ -1,0 +1,90 @@
+.btn-information-j{
+    -fx-background-color: #FF8F00;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+}
+.btn-danger-j{
+    -fx-background-color: #ed5565;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+}
+.btn-success-j{
+    -fx-background-color: #00acac;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+}
+.btn-menu{
+    -fx-background-color:  #2f4050;
+    -fx-text-fill:a1abbc;
+}
+.btn-menu:hover, .btn-menu:pressed{
+    -fx-background-color: #293846;
+    -fx-text-fill:white;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.btn-default{
+    -fx-background-color:white;
+    /*-fx-border-color:#e7eaec;*/
+    -fx-border-color:#c4c4c4;
+}
+.btn-default:hover,.btn-default:pressed{
+    -fx-background-color:#e2e2e2;
+}
+
+.btn-primary{
+    -fx-background-color:#1ab394;
+    -fx-border-color:#1ab394;
+    -fx-text-fill: white;
+}
+.btn-primary:hover,.btn-primary:pressed{
+    -fx-background-color:#18a689;
+    -fx-border-color:#18a689;
+    -fx-text-fill: white;
+}
+.btn-success{
+    -fx-background-color:#1c84c6;
+    -fx-border-color:#1c84c6;
+    -fx-text-fill: white;
+}
+.btn-success:hover,.btn-success:pressed{
+    -fx-background-color:#1a7bb9;
+    -fx-border-color:#1a7bb9;
+    -fx-text-fill: white;
+}
+.btn-info{
+    -fx-background-color:#21b9bb;
+    -fx-border-color:#21b9bb;
+    -fx-text-fill: white;
+}
+.btn-info:hover,.btn-info:pressed{
+    -fx-background-color: #26d7d9;
+    -fx-border-color: #26d7d9;
+    -fx-text-fill: white;
+}
+.btn-warning{
+    -fx-background-color:#f7a54a;
+    -fx-border-color:#f7a54a;
+    -fx-text-fill: white;
+}
+.btn-warning:hover,.btn-warning:pressed{
+    -fx-background-color: #f9b66d;
+    -fx-border-color: #f9b66d;
+    -fx-text-fill: white;
+}
+.btn-danger{
+    -fx-background-color:#ed5565;
+    -fx-border-color:#ed5565;
+    -fx-text-fill: white;
+}
+.btn-danger:hover,.btn-danger:pressed{
+    -fx-background-color:#ec4758;
+    -fx-border-color:#ec4758;
+    -fx-text-fill: white;
+}

@@ -1,0 +1,61 @@
+.dialog-pane{
+    -fx-border-color: white;
+    -fx-border-width: 2.0px;
+    -fx-text-fill: white;
+    -fx-font-size:15.0px;
+
+}
+.dialog-pane .label{
+    -fx-text-fill: white;
+    -fx-font-size:15.0px;
+}
+
+.dialog-pane:header .header-panel .label {
+    -fx-font-size: 15.0px;
+    -fx-wrap-text: true;
+    -fx-text-fill: white;
+    -fx-font-weigth: bold;
+}
+
+.dialog-pane > .content {
+    -fx-padding: 0.5em 0.5em 0.5em 0.5em;
+    -fx-background-color:  #78909C;
+    -fx-text-fill: white;
+    -fx-font-size:15.0px;
+}
+
+.dialog-pane:header .header-panel {
+    -fx-background-color:  #37474F;
+    -fx-font-size:15px;
+}
+.dialog-pane:header .header-panel .label{
+    -fx-text-fill:white;
+}
+
+
+/**Costumization of Buttons**/
+.dialog-pane .button{
+    /*-fx-background-color: #37474F;*/
+    /*-fx-text-fill:white;*/
+    -fx-wrap-text: true;
+    -fx-cursor:hand;
+    -fx-border-color:white;
+    -fx-padding: 13px;
+}
+
+
+
+.dialog-pane .button:focused{
+    /*-fx-background-color: linear-gradient(#00B0FF, #80D8FF);*/
+    -fx-text-fill:white;
+    -fx-border-color:white;
+}
+
+
+
+
+/**CONTAINER DOS BOTOES**/
+.dialog-pane > .button-bar > .container {
+    -fx-background-color:#37474F;
+}
+

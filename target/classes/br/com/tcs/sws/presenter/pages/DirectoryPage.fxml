@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.metre.mi.controller.ArquivosInstaladosFXMLController">
+   <children>
+      <BorderPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <top>
+            <VBox spacing="5.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox>
+                     <children>
+                        <VBox HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="425.0" text="Informe dos diretórios">
+                                 <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="22.0" prefWidth="388.0" text="Informe os diretórios para instalação" textAlignment="CENTER" textFill="#403e3e">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <ImageView fitHeight="45.0" fitWidth="47.0">
+                           <image>
+                              <Image url="@../img/installer.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </top>
+         <center>
+            <VBox prefHeight="335.0" prefWidth="579.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Separator prefHeight="0.0" prefWidth="388.0" />
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <VBox layoutX="88.0" layoutY="26.0" prefHeight="81.0" prefWidth="489.0" spacing="15.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="51.0" AnchorPane.topAnchor="30.0">
+                           <children>
+                              <VBox fx:id="vBoxCaminhoBackup1">
+                                 <children>
+                                    <Label text="Diretório do Sistema" />
+                                    <HBox spacing="5.0">
+                                       <children>
+                                          <TextField fx:id="iptDiretorioSistema" editable="false" minHeight="32.0" prefWidth="150.0" HBox.hgrow="ALWAYS" />
+                                          <Button minHeight="32.0" minWidth="35.0" mnemonicParsing="false" onAction="#buscarDirSistema" text="...">
+                                             <styleClass>
+                                                <String fx:value="Pesquisar-48" />
+                                                <String fx:value="btn-info" />
+                                             </styleClass>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="vBoxCaminhoBackup111" layoutX="10.0" layoutY="67.0">
+                                 <children>
+                                    <Label text="Diretório do Payara" />
+                                    <HBox spacing="5.0">
+                                       <children>
+                                          <TextField fx:id="iptCaminhoPayara" editable="false" minHeight="32.0" HBox.hgrow="ALWAYS" />
+                                          <Button minHeight="32.0" minWidth="35.0" mnemonicParsing="false" onAction="#buscarDirPayara" text="...">
+                                             <styleClass>
+                                                <String fx:value="Pesquisar-48" />
+                                                <String fx:value="btn-info" />
+                                             </styleClass>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </center>
+         <bottom>
+            <VBox BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="24.0" prefWidth="388.0" text="Para continuar, clique em Proximo" textAlignment="CENTER" textFill="#686666">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <Separator prefHeight="0.0" prefWidth="388.0" />
+                  <HBox alignment="TOP_RIGHT" spacing="10.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#anterior" prefHeight="25.0" prefWidth="107.0" text="Anterior" />
+                        <Button mnemonicParsing="false" onAction="#proximo" prefHeight="25.0" prefWidth="107.0" text="Proximo" />
+                        <Button mnemonicParsing="false" onAction="#cancelar" prefHeight="25.0" prefWidth="107.0" text="Cancelar" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
