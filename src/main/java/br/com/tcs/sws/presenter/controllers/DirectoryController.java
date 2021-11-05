@@ -15,6 +15,8 @@ import br.com.tcs.sws.core.Sessao;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.VBox;
 
 /**
  * FXML Controller class
@@ -22,6 +24,11 @@ import javafx.fxml.Initializable;
  * @author Tadeu-pc
  */
 public class DirectoryController implements Initializable {
+
+    @FXML
+    private VBox vBoxCaminhoBackup1;
+    @FXML
+    private TextField iptDiretorioSistema;
 
 	/**
 	 * Initializes the controller class.

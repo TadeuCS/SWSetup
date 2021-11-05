@@ -14,6 +14,9 @@ import br.com.tcs.sws.core.Mensagem;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.ProgressBar;
+import javafx.scene.control.TextArea;
 
 /**
  * FXML Controller class
@@ -21,6 +24,13 @@ import javafx.fxml.Initializable;
  * @author Tadeu-pc
  */
 public class LogController implements Initializable {
+
+    @FXML
+    private TextArea iptLog;
+    @FXML
+    private ProgressBar progress;
+    @FXML
+    private Button btnCancelar;
 
     /**
      * Initializes the controller class.
@@ -32,10 +42,6 @@ public class LogController implements Initializable {
 //        Sessao.sistemaOperacional=System.getProperty("os.name");
     }    
 
-    @FXML
-    private void proximo(ActionEvent event) {
-//        Sessao.tela.moveTo("TipoInstalacaoFXML");
-    }
 
     @FXML
     private void cancelar(ActionEvent event) {

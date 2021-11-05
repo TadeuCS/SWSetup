@@ -15,6 +15,9 @@ import br.com.tcs.sws.core.Sessao;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.ProgressBar;
+import javafx.scene.control.TextArea;
 
 /**
  * FXML Controller class
@@ -22,6 +25,13 @@ import javafx.fxml.Initializable;
  * @author Tadeu-pc
  */
 public class ExecutionController implements Initializable {
+
+    @FXML
+    private TextArea iptLog;
+    @FXML
+    private ProgressBar progress;
+    @FXML
+    private Button btnCancelar;
 
 	/**
 	 * Initializes the controller class.
@@ -34,12 +44,10 @@ public class ExecutionController implements Initializable {
 //        Sessao.sistemaOperacional=System.getProperty("os.name");
 	}
 
-	@FXML
 	private void proximo(ActionEvent event) {
 		Sessao.screenUtils.moveToNextPage();
 	}
 
-	@FXML
 	private void anterior(ActionEvent event) {
 		Sessao.screenUtils.moveToBackPage();
 	}

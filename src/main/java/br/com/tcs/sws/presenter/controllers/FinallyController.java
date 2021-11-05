@@ -37,9 +37,12 @@ public class FinallyController implements Initializable {
         Sessao.screenUtils.moveToNextPage();
     }
     
-    @FXML
     private void anterior(ActionEvent event) {
     	Sessao.screenUtils.moveToBackPage();
+    }
+
+    @FXML
+    private void cancelar(ActionEvent event) {
     }
     
 }

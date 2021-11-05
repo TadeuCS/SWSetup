@@ -15,6 +15,7 @@ import br.com.tcs.sws.core.Sessao;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.CheckBox;
 
 /**
  * FXML Controller class
@@ -22,6 +23,19 @@ import javafx.fxml.Initializable;
  * @author Tadeu-pc
  */
 public class OptionsController implements Initializable {
+
+    @FXML
+    private CheckBox chxEclipse;
+    @FXML
+    private CheckBox chxProjetos;
+    @FXML
+    private CheckBox chxJboss;
+    @FXML
+    private CheckBox chxDwf;
+    @FXML
+    private CheckBox chxPscript;
+    @FXML
+    private CheckBox chxGerenciadorDePacotes;
 
 	/**
 	 * Initializes the controller class.
