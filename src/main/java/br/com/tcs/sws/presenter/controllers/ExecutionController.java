@@ -11,6 +11,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import br.com.tcs.sws.core.Mensagem;
+import br.com.tcs.sws.core.Sessao;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -22,26 +23,32 @@ import javafx.fxml.Initializable;
  */
 public class ExecutionController implements Initializable {
 
-    /**
-     * Initializes the controller class.
-     * @param url
-     * @param rb
-     */
+	/**
+	 * Initializes the controller class.
+	 * 
+	 * @param url
+	 * @param rb
+	 */
 //    @Override
-    public void initialize(URL url, ResourceBundle rb) {
+	public void initialize(URL url, ResourceBundle rb) {
 //        Sessao.sistemaOperacional=System.getProperty("os.name");
-    }    
+	}
 
-    @FXML
-    private void proximo(ActionEvent event) {
-//        Sessao.tela.moveTo("TipoInstalacaoFXML");
-    }
+	@FXML
+	private void proximo(ActionEvent event) {
+		Sessao.screenUtils.moveToNextPage();
+	}
 
-    @FXML
-    private void cancelar(ActionEvent event) {
-        if(Mensagem.mensagemConfirm("Deseja cancelar a instalação?")){
-            System.exit(0);
-        }
-    }
-    
+	@FXML
+	private void anterior(ActionEvent event) {
+		Sessao.screenUtils.moveToBackPage();
+	}
+
+	@FXML
+	private void cancelar(ActionEvent event) {
+		if (Mensagem.mensagemConfirm("Deseja cancelar a instalação?")) {
+			System.exit(0);
+		}
+	}
+
 }

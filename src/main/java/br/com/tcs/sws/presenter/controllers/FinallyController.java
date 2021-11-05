@@ -10,7 +10,7 @@ package br.com.tcs.sws.presenter.controllers;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import br.com.tcs.sws.core.Mensagem;
+import br.com.tcs.sws.core.Sessao;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -34,14 +34,12 @@ public class FinallyController implements Initializable {
 
     @FXML
     private void proximo(ActionEvent event) {
-//        Sessao.tela.moveTo("TipoInstalacaoFXML");
+        Sessao.screenUtils.moveToNextPage();
     }
-
+    
     @FXML
-    private void cancelar(ActionEvent event) {
-        if(Mensagem.mensagemConfirm("Deseja cancelar a instalação?")){
-            System.exit(0);
-        }
+    private void anterior(ActionEvent event) {
+    	Sessao.screenUtils.moveToBackPage();
     }
     
 }

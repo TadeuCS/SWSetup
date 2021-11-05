@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.metre.mi.controller.ArquivosInstaladosFXMLController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.tcs.sws.presenter.controllers.DirectoryController">
    <children>
       <BorderPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
          <top>
@@ -59,24 +59,8 @@
                                     <Label text="Diretório do Sistema" />
                                     <HBox spacing="5.0">
                                        <children>
-                                          <TextField fx:id="iptDiretorioSistema" editable="false" minHeight="32.0" prefWidth="150.0" HBox.hgrow="ALWAYS" />
+                                          <TextField fx:id="iptDiretorioSistema" minHeight="32.0" prefWidth="150.0" text="C:\sk-java\" HBox.hgrow="ALWAYS" />
                                           <Button minHeight="32.0" minWidth="35.0" mnemonicParsing="false" onAction="#buscarDirSistema" text="...">
-                                             <styleClass>
-                                                <String fx:value="Pesquisar-48" />
-                                                <String fx:value="btn-info" />
-                                             </styleClass>
-                                          </Button>
-                                       </children>
-                                    </HBox>
-                                 </children>
-                              </VBox>
-                              <VBox fx:id="vBoxCaminhoBackup111" layoutX="10.0" layoutY="67.0">
-                                 <children>
-                                    <Label text="Diretório do Payara" />
-                                    <HBox spacing="5.0">
-                                       <children>
-                                          <TextField fx:id="iptCaminhoPayara" editable="false" minHeight="32.0" HBox.hgrow="ALWAYS" />
-                                          <Button minHeight="32.0" minWidth="35.0" mnemonicParsing="false" onAction="#buscarDirPayara" text="...">
                                              <styleClass>
                                                 <String fx:value="Pesquisar-48" />
                                                 <String fx:value="btn-info" />

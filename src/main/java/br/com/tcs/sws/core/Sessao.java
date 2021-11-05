@@ -31,7 +31,7 @@ public class Sessao {
     public static Integer versaoOficial;
     
     public static Ini ini;
-    public static Tela tela;
+    public static ScreenUtils screenUtils;
     public static TextArea iptLog;
 
 }
