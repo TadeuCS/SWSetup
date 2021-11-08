@@ -1,4 +1,4 @@
-package br.com.tcs.sws.presentation.controllers;
+package br.com.tcs.sws.presentation.view;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -15,7 +15,7 @@ import javafx.scene.control.TextField;
  *
  * @author Tadeu-pc
  */
-public class DirectoryController extends StageFacade implements Initializable{
+public class DirectoryView extends StageFacade implements Initializable{
 
     @FXML
     private Button btnFolderSearch;

@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.tcs.sws.application.utils;
+package br.com.tcs.sws.domain.utils;
 
-import br.com.tcs.sws.domain.files.ParamettersFile;
+import br.com.tcs.sws.domain.entities.ParamettersFile;
 
 /**
  *

@@ -1,4 +1,4 @@
-package br.com.tcs.sws.application.repositories;
+package br.com.tcs.sws.domain.repositories;
 
 public interface IProcessadorArquivoRepository {
 	public boolean fileExists(String path, String fileName);

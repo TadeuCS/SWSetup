@@ -1,4 +1,4 @@
-package br.com.tcs.sws.domain.files;
+package br.com.tcs.sws.domain.entities;
 
 import java.util.List;
 

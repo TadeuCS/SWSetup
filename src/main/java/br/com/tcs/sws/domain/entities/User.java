@@ -1,4 +1,4 @@
-package br.com.tcs.sws.domain.users;
+package br.com.tcs.sws.domain.entities;
 
 public class User {
 	private String userName;

@@ -1,4 +1,4 @@
-package br.com.tcs.sws.presentation.controllers;
+package br.com.tcs.sws.presentation.view;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -11,7 +11,7 @@ import javafx.fxml.Initializable;
  *
  * @author Tadeu-pc
  */
-public class FinallyController  extends StageFacade implements Initializable {
+public class FinallyView  extends StageFacade implements Initializable {
 
     /**
      * Initializes the controller class.
