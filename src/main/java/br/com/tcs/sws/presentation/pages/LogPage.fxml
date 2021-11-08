@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.tcs.sws.presentation.controllers.LogController">
+   <children>
+      <VBox layoutX="20.0" layoutY="20.0" spacing="5.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <VBox>
+               <children>
+                  <Label prefHeight="17.0" prefWidth="425.0" text="Detalhes da Instalação">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="BOTTOM_LEFT" minHeight="18.0" prefHeight="28.0" prefWidth="505.0" text="Aguarde alguns minutos enquanto o instalador prepara tudo para você...">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Separator prefHeight="0.0" prefWidth="388.0" />
+            <HBox>
+               <children>
+                  <AnchorPane maxWidth="262.0" minWidth="100.0" prefHeight="305.0" prefWidth="262.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="17.0" prefWidth="329.0" text="Instalação em progresso" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <TextArea fx:id="iptLog" editable="false" prefHeight="306.0" prefWidth="468.0" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <ProgressBar fx:id="progress" maxHeight="12.0" minHeight="12.0" prefHeight="12.0" prefWidth="580.0" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox alignment="TOP_RIGHT" spacing="10.0">
+               <children>
+                  <Button fx:id="btnCancelar" mnemonicParsing="false" onAction="#onCancel" prefHeight="25.0" prefWidth="107.0" text="Cancelar" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
