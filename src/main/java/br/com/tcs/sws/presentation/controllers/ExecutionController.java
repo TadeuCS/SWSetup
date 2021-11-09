@@ -1,4 +1,4 @@
-package br.com.tcs.sws.presentation.view;
+package br.com.tcs.sws.presentation.controllers;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -15,7 +15,7 @@ import javafx.scene.control.TextArea;
  *
  * @author Tadeu-pc
  */
-public class LogView  extends StageFacade implements Initializable {
+public class ExecutionController  extends StageFacade implements Initializable {
 
     @FXML
     private TextArea iptLog;
@@ -24,13 +24,15 @@ public class LogView  extends StageFacade implements Initializable {
     @FXML
     private Button btnCancelar;
 
-    /**
-     * Initializes the controller class.
-     * @param url
-     * @param rb
-     */
+	/**
+	 * Initializes the controller class.
+	 * 
+	 * @param url
+	 * @param rb
+	 */
     @Override
-    public void initialize(URL url, ResourceBundle rb) {
-    }    
+	public void initialize(URL url, ResourceBundle rb) {
+    	//Inicia processamento...
+	}
 
 }

@@ -1,7 +1,7 @@
 package br.com.tcs.sws.domain.usecases;
 
-import br.com.tcs.sws.application.usecases.IProcessadorArquivoUseCase;
 import br.com.tcs.sws.domain.repositories.IProcessadorArquivoRepository;
+import br.com.tcs.sws.presentation.usecases.IProcessadorArquivoUseCase;
 
 public class ValidadorDeDiretoriosImpl implements IProcessadorArquivoUseCase {
 	private final IProcessadorArquivoRepository fileValidator;

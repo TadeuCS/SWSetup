@@ -1,4 +1,4 @@
-package br.com.tcs.sws.presentation.view;
+package br.com.tcs.sws.presentation.controllers;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -14,7 +14,7 @@ import javafx.scene.control.CheckBox;
  *
  * @author Tadeu-pc
  */
-public class OptionsView  extends StageFacade implements Initializable {
+public class OptionsController  extends StageFacade implements Initializable {
 
     @FXML
     private CheckBox chxEclipse;
